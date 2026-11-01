@@ -1,6 +1,6 @@
 # VailSight – Multi-Sensor Perception & Navigation System
 
-🏆 One of 3 winning projects (out of 94 teams) in the MAFAT B.U.I.L.D Competition, September 2026
+🏆 One of 3 winning projects (out of 64 teams) in the MAFAT B.U.I.L.D Competition, September 2026
 
 VailSight is a team-built perception and navigation system that fuses data from several sensors: mmWave radar, IMU, thermal camera and RGB camera. It runs on NVIDIA Jetson and OpenMV N6 hardware.
 
