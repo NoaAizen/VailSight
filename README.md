@@ -24,8 +24,8 @@ I owned the sensor integration layer: getting the radar, IMU and thermal data on
 
 - **Sensor integration and synchronization:** brought radar data onto the NVIDIA Jetson and aligned radar, IMU and thermal data on one shared clock, including timestamp handling.
 - **Sensor API and recording tools:** built an API and recording tools that teammates used for their fusion and navigation code.
-- **Radar-to-camera calibration:** ran the radar-to-RGB calibration session (calibration tools built by a teammate) and recorded the calibration data: 22 fit points and 6 held-out points.
-- **Pose initialization:** worked on the system's pose initialization.
+- **Radar-to-camera calibration:** defined the calibration plan and performed the hands-on radar-to-RGB calibration: picked the correspondence points and recorded 22 fit points and 6 held-out validation points at 2–8.6 m. The calibration tools themselves are in a teammate's commits; see the [calibration day notes](https://github.com/NoaAizen/VailSight/blob/5326c648470c2bf3fc9de7718167052e89249cfa/openmv-n6/calib-artifacts/calib_2026-08-18/README.md).
+- **Pose initialization:** built pose_init v0, which estimates position and heading by matching radar wall returns against building footprints.
 - **Radar test suite:** researched the radar output, defined test requirements and built an AI-assisted pytest suite, including replay on recorded sensor data.
 - **Team coordination:** coordinated the team's tasks from June until the final.
 - Also assisted with the team's AI object detection model.
