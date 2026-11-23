@@ -4,8 +4,6 @@
 
 VailSight is a team-built perception and navigation system that fuses data from several sensors: mmWave radar, IMU, thermal camera and RGB camera. It runs on NVIDIA Jetson and OpenMV N6 hardware.
 
-Built by a 6-person team, June – September 2026.
-
 ## System Overview
 
 | Component | Details |
@@ -18,21 +16,9 @@ Built by a 6-person team, June – September 2026.
 
 The sensor data is synchronized on one shared clock and passed to the team's fusion, tracking and navigation code.
 
-## My Role – Noa Aizen
+## Key Commits – Noa Aizen
 
-I owned the sensor integration layer: getting the radar, IMU and thermal data onto the Jetson, synchronized and ready for the rest of the team.
-
-- **Sensor integration and synchronization:** brought radar data onto the NVIDIA Jetson and aligned radar, IMU and thermal data on one shared clock, including timestamp handling.
-- **Sensor API and recording tools:** built an API and recording tools that teammates used for their fusion and navigation code.
-- **Radar-to-camera calibration:** defined the calibration plan and performed the hands-on radar-to-RGB calibration: picked the correspondence points and recorded 22 fit points and 6 held-out validation points at 2–8.6 m. The calibration tools themselves are in a teammate's commits; see the [calibration day notes](https://github.com/NoaAizen/VailSight/blob/5326c648470c2bf3fc9de7718167052e89249cfa/openmv-n6/calib-artifacts/calib_2026-08-18/README.md).
-- **Pose initialization:** built pose_init v0, which estimates position and heading by matching radar wall returns against building footprints.
-- **Radar test suite:** researched the radar output, defined test requirements and built an AI-assisted pytest suite, including replay on recorded sensor data.
-- **Team coordination:** coordinated the team's tasks from June until the final.
-- Also assisted with the team's AI object detection model.
-
-## My Key Commits
-
-My code lives in several feature branches. Each link below opens the commit directly:
+Noa Aizen's code lives in several feature branches. Each link below opens the commit directly:
 
 **Radar (stage-1 bring-up and audit)**
 - [`09de73e`](https://github.com/NoaAizen/VailSight/commit/09de73ec87fd7d7307ebcf721cb70a35754152d1) (09.08.2026) Stage-1 mmWave radar bring-up code
@@ -63,4 +49,4 @@ Python · C · Linux · NVIDIA Jetson · OpenMV N6 · pytest · sensor fusion ·
 
 ## Team
 
-Developed by a team of 6 as part of the MAFAT B.U.I.L.D Competition.
+Developed as a team project in the MAFAT B.U.I.L.D Competition.
